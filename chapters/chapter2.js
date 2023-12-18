@@ -1,8 +1,7 @@
 import { sdjClient } from "sdj";
 import dotenv from "dotenv";
-
-dotenv.config();
 const client = new sdjClient();
+dotenv.config();
 
 const message = async message=>{
     if(message.content === "!omikuzi"){
