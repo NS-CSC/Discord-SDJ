@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 const client = new sdjClient();
 dotenv.config();
 
-const message = async message=>{
+const atchMessage = async message=>{
     if(message.content === "!omikuzi"){
         const result = omikuzi();
         await client.sendMessage(message.channel,`今日の運勢は${result}です！`);
